@@ -1,1 +1,0 @@
-/home/crist/.config/i3/
