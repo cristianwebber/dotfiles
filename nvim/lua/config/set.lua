@@ -2,6 +2,7 @@ vim.opt.guicursor = ""
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
+vim.opt.cursorline = true -- highlight the current line
 
 vim.opt.errorbells = false
 
@@ -17,7 +18,7 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 
 vim.opt.swapfile = false
-vim.opt.backup = false
+vim.opt.backup = false -- creates a backup file
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
@@ -43,3 +44,8 @@ vim.opt.shortmess:append("c")
 vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
+
+vim.opt.clipboard = "unnamedplus" -- allows neovim to access the clipboard
+vim.opt.updatetime = 300 -- faster completion (4000ms default)
+vim.opt.writebackup = false -- don't allow open files to be edited
+

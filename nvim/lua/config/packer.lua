@@ -14,25 +14,31 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
   use('wbthomason/packer.nvim')
 
-   use('gruvbox-community/gruvbox')
-   use("folke/tokyonight.nvim")
+  use('gruvbox-community/gruvbox')
+  use("folke/tokyonight.nvim")
 
-   use('nvim-treesitter/nvim-treesitter', {
+  use('nvim-treesitter/nvim-treesitter', {
         run = ':TSUpdate'
-   })
+  })
 
-   use({
+  use({
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-    })
+  })
 
-    use("nvim-lua/plenary.nvim")
-    use("nvim-lua/popup.nvim")
-    use("nvim-telescope/telescope.nvim")
+  use("nvim-lua/plenary.nvim")
+  use("nvim-lua/popup.nvim")
+  use("nvim-telescope/telescope.nvim")
 
-    use 'neovim/nvim-lspconfig'
-    use 'nvim-lua/completion-nvim'
-    use 'anott03/nvim-lspinstall'
+  use("neovim/nvim-lspconfig")
+  use("nvim-lua/completion-nvim")
+  use("anott03/nvim-lspinstall")
+
+  use("kyazdani42/nvim-web-devicons")
+  use("kyazdani42/nvim-tree.lua")
+
+  use("numToStr/Comment.nvim")
+  use("JoosepAlviste/nvim-ts-context-commentstring")
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
