@@ -49,10 +49,3 @@ keymap('n', '<leader>ff', '<cmd>Telescope find_files<cr>')
 keymap('n', '<leader>fg', '<cmd>Telescope live_grep<cr>')
 keymap('n', '<leader>fb', '<cmd>Telescope buffers<cr>')
 keymap('n', '<leader>fh', '<cmd>Telescope help_tags<cr>')
-
--- Git
---keymap('n', '<leader>gg', '<cmd>lua _LAZYGIT_TOGGLE()<CR>')
-
--- Comment
---keymap('n', '<leader>/', '<cmd>lua require('Comment.api').toggle.linewise.current()<CR>')
---keymap('x', '<leader>/', '<ESC><CMD>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>')
