@@ -3,7 +3,7 @@ local keymap = function(mode, key, result)
     mode,
     key,
     result,
-    {noremap = true, silent = true}
+    { noremap = true, silent = true }
   )
 end
 
@@ -20,9 +20,9 @@ keymap('v', 'JK', '<ESC>')
 keymap('v', 'jK', '<ESC>')
 
 -- Normal Bindings
-keymap('n', '<C-q>', ':q!<CR>')
-keymap('n', '<C-s>', ':w<CR>')
-keymap('n', '<C-e>', ':NvimTreeFindFile<CR>')
+keymap('n', '<C-q>', ':bd<CR>') -- close buffer
+keymap('n', '<C-s>', ':w<CR>') -- save buffer
+keymap('n', '<C-e>', '<cmd>Telescope find_files<cr>')
 
 -- Copy line
 keymap('n', '<leader>l', 'yyp')
