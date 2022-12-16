@@ -21,6 +21,12 @@ keymap('v', 'jk', '<ESC>')
 keymap('v', 'JK', '<ESC>')
 keymap('v', 'jK', '<ESC>')
 
+-- Keep in center when moving
+keymap("n", "<C-d>", "<C-d>zz")
+keymap("n", "<C-u>", "<C-u>zz")
+keymap("n", "n", "nzzzv")
+keymap("n", "N", "Nzzzv")
+
 -- Normal Bindings
 keymap('n', '<C-q>', ':bd<CR>') -- close buffer
 keymap('n', '<C-s>', ':w<CR>') -- save buffer
