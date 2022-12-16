@@ -12,6 +12,8 @@ keymap('', '<up>', '<nop>')
 keymap('', '<down>', '<nop>')
 keymap('', '<left>', '<nop>')
 keymap('', '<right>', '<nop>')
+
+-- Exit with JK
 keymap('i', 'jk', '<ESC>')
 keymap('i', 'JK', '<ESC>')
 keymap('i', 'jK', '<ESC>')
