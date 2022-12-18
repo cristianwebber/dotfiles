@@ -57,3 +57,8 @@ keymap('n', '<leader>ff', '<cmd>Telescope find_files<cr>')
 keymap('n', '<leader>fg', '<cmd>Telescope live_grep<cr>')
 keymap('n', '<leader>fb', '<cmd>Telescope buffers<cr>')
 keymap('n', '<leader>fh', '<cmd>Telescope help_tags<cr>')
+
+-- NERDTree
+keymap('n', '<C-n>', ':NERDTree<CR>')
+keymap('n', '<C-w>', ':NERDTreeToggle<CR>')
+keymap('n', '<leader>n', ':NERDTreeFind<CR>')
