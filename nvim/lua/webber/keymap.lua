@@ -21,6 +21,14 @@ keymap('v', 'jk', '<ESC>')
 keymap('v', 'JK', '<ESC>')
 keymap('v', 'jK', '<ESC>')
 
+-- Move lines
+keymap('n', '<A-j>', ': .m+1<CR>==')
+keymap('n', '<A-k>', ': .m-2<CR>==')
+keymap('i', '<A-j>', '<Esc>: .m+1<CR>==gi')
+keymap('i', '<A-k>', '<Esc>: .m-2<CR>==gi')
+keymap('v', '<A-j>', ': .m+1<CR>gv==gv')
+keymap('v', '<A-k>', ': .m-2<CR>gv==gv')
+--
 -- Keep in center when moving
 keymap("n", "<C-d>", "<C-d>zz")
 keymap("n", "<C-u>", "<C-u>zz")
