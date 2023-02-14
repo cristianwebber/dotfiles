@@ -17,10 +17,6 @@ return require('packer').startup(function(use)
     use('gruvbox-community/gruvbox')
     use("folke/tokyonight.nvim")
 
-    use('nvim-treesitter/nvim-treesitter', {
-        run = ':TSUpdate'
-    })
-
     use({
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -47,10 +43,10 @@ return require('packer').startup(function(use)
 
             -- Autocompletion
             {'hrsh7th/nvim-cmp'},
+            {'hrsh7th/cmp-nvim-lsp'},
             {'hrsh7th/cmp-buffer'},
             {'hrsh7th/cmp-path'},
             {'saadparwaiz1/cmp_luasnip'},
-            {'hrsh7th/cmp-nvim-lsp'},
             {'hrsh7th/cmp-nvim-lua'},
 
             -- Snippets
