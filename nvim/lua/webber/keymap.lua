@@ -13,14 +13,6 @@ keymap('', '<down>', '<nop>')
 keymap('', '<left>', '<nop>')
 keymap('', '<right>', '<nop>')
 
--- Exit with JK
-keymap('i', 'jk', '<ESC>')
-keymap('i', 'JK', '<ESC>')
-keymap('i', 'jK', '<ESC>')
-keymap('v', 'jk', '<ESC>')
-keymap('v', 'JK', '<ESC>')
-keymap('v', 'jK', '<ESC>')
-
 -- Move lines
 keymap('n', '<A-j>', ': .m+1<CR>==')
 keymap('n', '<A-k>', ': .m-2<CR>==')
