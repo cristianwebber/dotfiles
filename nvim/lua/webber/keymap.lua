@@ -62,3 +62,4 @@ keymap('n', '<leader>fh', '<cmd>Telescope help_tags<cr>')
 keymap('n', '<C-n>', ':NERDTree<CR>')
 keymap('n', '<C-w>', ':NERDTreeToggle<CR>')
 keymap('n', '<leader>n', ':NERDTreeFind<CR>')
+
