@@ -8,3 +8,5 @@ alias sv='source venv/bin/activate && if [ -f .env ]; then source .env; fi'
 
 alias k='kubectl'
 alias pods='kubectl get pods'
+
+alias g='lazygit'

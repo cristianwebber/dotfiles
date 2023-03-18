@@ -61,13 +61,17 @@ return require('packer').startup(function(use)
         'numToStr/Comment.nvim',
         config = function()
             require('Comment').setup(
-                {
-                    toggler = { line = '<C-_>' },
-                    opleader = { line = '<C-_>' }
-                }
+            {
+                toggler = { line = '<C-_>' },
+                opleader = { line = '<C-_>' }
+            }
             )
         end
     }
+
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+        require("toggleterm").setup()
+    end}
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
