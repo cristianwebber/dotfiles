@@ -59,7 +59,6 @@ keymap('n', '<leader>fb', '<cmd>Telescope buffers<cr>')
 keymap('n', '<leader>fh', '<cmd>Telescope help_tags<cr>')
 
 -- NERDTree
-keymap('n', '<C-n>', ':NERDTree<CR>')
-keymap('n', '<C-w>', ':NERDTreeToggle<CR>')
-keymap('n', '<leader>n', ':NERDTreeFind<CR>')
+keymap('n', '<leader>n', ':NERDTreeToggle<CR>')
+keymap('n', '<leader>m', ':NERDTreeFind<CR>')
 
