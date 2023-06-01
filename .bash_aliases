@@ -17,6 +17,8 @@ export VISUAL=nvim
 export PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
 
 alias git-clear="git branch --merged | egrep -v '(^\*|master|main|develop|staging)' | xargs git branch -d"
+alias git-clean='git branch --merged develop | grep -Ev "(^\*|develop|staging|main)" | xargs -n 1 -r git branch -d'
+alias git-clean-remote='git branch -r --merged | grep -Ev "(^\*|develop|staging|main)" | sed 's/origin\///' | xargs -n 1 -r git push --delete origin'
 
 alias dbtls="dbt ls --resource-type=model -s"
 
