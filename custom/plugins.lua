@@ -61,6 +61,7 @@ local plugins = {
     lazy=false,
     version = "*",
     config=function()
+      require("custom.configs.lazygit")
       require("toggleterm").setup({
         active = true,
         on_config_done = nil,
@@ -91,7 +92,8 @@ local plugins = {
         },
       })
     end,
-  }
+  },
+
 
 }
 
